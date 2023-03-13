@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ffe094e6-f232-43c7-bc67-112b1be7ba79" name="Changes" comment="add to Git">
-      <change afterPath="$PROJECT_DIR$/img/giphy.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="ffe094e6-f232-43c7-bc67-112b1be7ba79" name="Changes" comment="com" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +61,7 @@
       <updated>1677957536958</updated>
       <workItem from="1677957542226" duration="7460000" />
       <workItem from="1678090858706" duration="2295000" />
-      <workItem from="1678389508160" duration="5127000" />
+      <workItem from="1678389508160" duration="5992000" />
     </task>
     <task id="LOCAL-00001" summary="add to Git">
       <created>1677958977468</created>
@@ -96,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678145379686</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="com">
+      <created>1678641910643</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678641910643</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +117,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add to Git" />
-    <option name="LAST_COMMIT_MESSAGE" value="add to Git" />
+    <MESSAGE value="com" />
+    <option name="LAST_COMMIT_MESSAGE" value="com" />
   </component>
 </project>
