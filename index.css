@@ -1,6 +1,8 @@
 body {
     padding: 0;
     margin: 0;
+
+    background: #7fdcab;
 }
 
 .gif {
@@ -17,8 +19,21 @@ body {
     display: flex;
     justify-content: center;
 
-    background: #7fdcab;
+    /**/
 
+}
+
+.theme{
+
+    width: 100px;
+    height: 50px;
+
+
+
+}
+
+body.dark-mode{
+    background: #7e72bd;
 }
 
 h1, h2 {
@@ -31,7 +46,7 @@ h1, h2 {
     margin: 0.5%;
 
     width: 70%;
-    height: 50%;
+
 
     background: #bd7166;
 }
