@@ -8,6 +8,8 @@ body {
     flex-flow: column;
 
 
+
+
     width: 100%;
     /*height: 1000px;*/
 
@@ -44,6 +46,17 @@ body {
     height: 60%;
 
     background: darkcyan;
+}
+
+.aboutProj{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.divProj{
+    width: 50%;
+
+    text-align: center;
 }
 
 .footer {

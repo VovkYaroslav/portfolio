@@ -2,10 +2,46 @@
 let arrOfScreens = [//    unfortunately I have no enough projects for this array
     {
         picture: "",
-        name: "",
+        name: "Adaptation",
+        info: "",
+        link: "https://ru.w3docs.com/snippets/html/kak-sozdat-html-knopku-kotoraia-deistvuet-kak-ssylka.html"
+    },
+    {
+        picture: "",
+        name: "Use Fetch",
         info: "",
         link: ""
-    }
+    },
+    {
+        picture: "",
+        name: "Primitive calculator",
+        info: "",
+        link: ""
+    },
+    {
+        picture: "",
+        name: "Primitive calculator calories",
+        info: "",
+        link: ""
+    },
+    {
+        picture: "",
+        name: "Compound interests calculator",
+        info: "",
+        link: ""
+    },
+    {
+        picture: "",
+        name: "Primitive React project with using axios",
+        info: "",
+        link: ""
+    },
+    {
+        picture: "",
+        name: "How I see web-sites of kkibp",
+        info: "",
+        link: ""
+    },
 ];
 console.log(arrOfScreens)
 
@@ -15,7 +51,7 @@ let liContacts = [
         content: "Phone", link: "tel:+38 097 100 9043", name: "+38(097) 100 9043"
     },
     {
-        content: "Gmail", link: "mailto:vovkyarik32@gmail.com", name: "vovkyarik32@gmail.com"
+        content: "Email", link: "mailto:vovkyarik32@gmail.com", name: "vovkyarik32@gmail.com"
     },
 ];
 
@@ -87,15 +123,8 @@ aboutProj.className = "aboutProj";
 let conclusion = document.createElement("div");
 conclusion.className = "conclusion";
 
-//content in aboutProj
-let screenshots = document.createElement("div");
-//in this part l`d like to do some cycle. This cycle must create element "div" for everyone img.
-screenshots.className = "screenshots";
-let someInf = document.createElement("div");
-someInf.className = "someInf";
 
-aboutProj.append(screenshots, someInf);
-mainInf.append(conclusion, aboutProj);
+mainInf.append(aboutProj, conclusion);
 
 //content in footer
 let contacts = document.createElement("div");
@@ -146,10 +175,45 @@ me.append(port, infoAboutMe)
 //main info-block extension
 
 //cycle for screenshots
+for (const arrOfScreen of arrOfScreens) {
+    let divProj = document.createElement("div");
+    divProj.className = "divProj";
+
+    let screenshot = document.createElement("img");
+    screenshot.src = `${arrOfScreen.picture}`;
+
+    let infProj = document.createElement("div");
+
+    let parProj = document.createElement("p");
+    parProj.innerText = `${arrOfScreen.info}`;
+
+    let titleProj = document.createElement("h4");
+    titleProj.innerText = `${arrOfScreen.name}`
+
+
+    let linkProj = document.createElement("form");
+    linkProj.action = arrOfScreen.link
+    let butProj = document.createElement("button");
+    butProj.type = "submit"
+    butProj.innerText = "click for details"
+    linkProj.append(butProj)
+
+    infProj.append(titleProj, parProj)
+    divProj.append(screenshot, infProj, linkProj)
+    aboutProj.append(divProj)
+}
 
 //content in someInf
 
 //content in conclusion
+
+let parCon = document.createElement("p");
+parCon.innerText = "In conclusion, I recognize that there is much for me to learn and comprehend. However, I am eager to" +
+    " continue my learning journey and consistently develop my skills. My aspiration is to always aim for excellence, and" +
+    " I am highly motivated to achieve extraordinary accomplishments. My goal is to reach the level of a senior in web" +
+    " development and continue to grow beyond that."
+
+conclusion.append(parCon);
 
 
 //footer extension
@@ -194,9 +258,6 @@ links.append(messengers)
 
 
 //content in switcher
-
-
-
 
 
 //In this page I want also create some interesting design and try create moving parts
