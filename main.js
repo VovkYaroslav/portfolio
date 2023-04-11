@@ -1,9 +1,37 @@
 //array of screenshots for cycle in mainInf
-let arrOfScreens = [
-//    unfortunately I have no enough projects for this array
+let arrOfScreens = [//    unfortunately I have no enough projects for this array
+    {
+        picture: "",
+        name: "",
+        info: "",
+        link: ""
+    }
 ];
 console.log(arrOfScreens)
 
+//arrays with my contact information
+let liContacts = [
+    {
+        content: "Phone", link: "tel:+38 097 100 9043", name: "+38(097) 100 9043"
+    },
+    {
+        content: "Gmail", link: "mailto:vovkyarik32@gmail.com", name: "vovkyarik32@gmail.com"
+    },
+];
+
+let liLinks = [
+
+    {
+        link: "https://github.com/VovkYaroslav", name: "GitHub"
+    }, {
+        link: "https://t.me/vovk_zvir", name: "Telegram"
+
+    }, {
+        link: "https://www.instagram.com/vovk_yaroslav_olegovich/", name: "Instagram"
+    }, {
+        link: "https://www.facebook.com/profile.php?id=100063281010655", name: "Facebook"
+    }
+];
 //structure of my portfolio
 //This part mast have all main blocks like header, main info block, footer. It will have content in all main blocks
 // like:
@@ -30,16 +58,20 @@ let footer = document.createElement("div");
 footer.className = "footer";
 let buttonUp = document.createElement("button");
 buttonUp.className = "buttonUp"
-
-container.append(header, mainInf, footer, buttonUp);
-
-//content in header
 let switcher = document.createElement("div");
 switcher.className = "switcher";
+
+container.append(header, mainInf, footer, buttonUp, switcher);
+
+//content in header
+let title = document.createElement("h1");
 let about = document.createElement("div");
 about.className = "about";
 
-header.append(switcher, about);
+title.innerText = "Portfolio page";
+
+
+header.append(title, about);
 
 //content in about
 let me = document.createElement("div");
@@ -77,9 +109,36 @@ footer.append(contacts, links);
 
 //header extension
 
-//content in switcher
-
 //content in me
+let port = document.createElement("div");
+port.className = "port"
+let img = document.createElement("img");
+img.className = "img"
+img.src = "img/12.jpg";
+
+port.append(img);
+
+let infoAboutMe = document.createElement("div");
+
+let secondTitle = document.createElement("h3");
+secondTitle.innerText = "Some information about me"
+
+let par = document.createElement("p");
+par.innerText = "Hello! My name is Yaroslav, and I am currently a student at the National Aviation University, as well" +
+    " as a full-stack developer student at OctenSchool. Although I am new to development, I have completed tasks assigned" +
+    " to me in my courses, which I can share with you to demonstrate my current skill level.\n" + "\n" + "My ultimate goal" +
+    " is to expand my knowledge and gain experience working on real-world projects. While I am aware that most employers" +
+    " require some level of experience, I am eager to find opportunities where I can contribute and learn without prior " +
+    "experience. I am committed to learning through any available means to gain the necessary experience as quickly as possible.\n"
+    + "\n" + "I believe that I can be a valuable addition to any team, and I am motivated to earn a fair salary for my work." +
+    " If given the chance, I am confident that I can demonstrate my abilities and contribute meaningfully to your company." +
+    " Thank you for considering my application."
+
+infoAboutMe.className = "infoAboutMe"
+
+infoAboutMe.append(secondTitle, par)
+
+me.append(port, infoAboutMe)
 
 //content in proj
 
@@ -97,21 +156,47 @@ footer.append(contacts, links);
 
 //content in contacts
 let listContact = document.createElement("ul");
-listContact.className = ".listOfContacts"
+listContact.className = "listOfContacts"
 
+for (const liContact of liContacts) {
 
+    let xx = document.createElement("li");
+    xx.innerText = `${liContact.content}: `
 
+    let aOfContact = document.createElement("a")
+    aOfContact.href = `${liContact.link}`
+    aOfContact.innerText = `${liContact.name}`
 
+    xx.append(aOfContact)
+    listContact.append(xx)
+}
 
-contacts.append(listContact)
+contacts.append(listContact);
 
 //content in links
 let messengers = document.createElement("ul");
-messengers.className = ".mes"
+messengers.className = "mes";
+
+for (const liLink of liLinks) {
+
+    let li = document.createElement("li");
 
 
+    let aOfLinks = document.createElement("a");
+    aOfLinks.href = `${liLink.link}`
+    aOfLinks.innerText = `${liLink.name}`
+
+    li.append(aOfLinks);
+    messengers.append(li)
+}
 
 links.append(messengers)
 
 
+//content in switcher
 
+
+
+
+
+//In this page I want also create some interesting design and try create moving parts
