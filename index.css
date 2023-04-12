@@ -7,8 +7,9 @@ body {
     display: flex;
     flex-flow: column;
 
-
-
+    font-size: 17px;
+    font-style: italic;
+    font-family: Georgia, fantasy;
 
     width: 100%;
     /*height: 1000px;*/
@@ -22,8 +23,18 @@ body {
 
     background: greenyellow;
 
+
     text-align: center;
 
+}
+
+.about {
+    margin: 15px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
 }
 
 .img {
@@ -32,13 +43,17 @@ body {
     width: 40%;
 }
 
-.me{
+.me {
     display: flex;
     flex-flow: row;
 }
 
-.infoAboutMe{
+.infoAboutMe {
     width: 60%;
+}
+
+.conclusion {
+    margin: 15px;
 }
 
 .mainInf {
@@ -48,12 +63,12 @@ body {
     background: darkcyan;
 }
 
-.aboutProj{
+.aboutProj {
     display: flex;
     flex-wrap: wrap;
 }
 
-.divProj{
+.divProj {
     width: 50%;
 
     text-align: center;

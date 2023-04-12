@@ -10,7 +10,7 @@ let arrOfScreens = [//    unfortunately I have no enough projects for this array
         picture: "",
         name: "Use Fetch",
         info: "",
-        link: ""
+        link: "https://vovkyaroslav.github.io/some/"
     },
     {
         picture: "",
@@ -38,12 +38,12 @@ let arrOfScreens = [//    unfortunately I have no enough projects for this array
     },
     {
         picture: "",
-        name: "How I see web-sites of kkibp",
+        name: "Page mountains",
         info: "",
-        link: ""
+        link: "https://vovkyaroslav.github.io/Try1/#"
     },
 ];
-console.log(arrOfScreens)
+
 
 //arrays with my contact information
 let liContacts = [
