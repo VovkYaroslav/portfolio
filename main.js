@@ -143,7 +143,7 @@ let port = document.createElement("div");
 port.className = "port"
 let img = document.createElement("img");
 img.className = "img"
-img.src = "img/12.jpg";
+img.src = "img/12-depositphotos-bgremover.png";
 
 port.append(img);
 
