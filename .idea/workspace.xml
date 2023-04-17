@@ -7,6 +7,7 @@
     <list default="true" id="ffe094e6-f232-43c7-bc67-112b1be7ba79" name="Changes" comment="main info">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +77,8 @@
       <workItem from="1680210798817" duration="21903000" />
       <workItem from="1681110847678" duration="11823000" />
       <workItem from="1681208341691" duration="8920000" />
-      <workItem from="1681283789945" duration="8658000" />
+      <workItem from="1681283789945" duration="9228000" />
+      <workItem from="1681715816988" duration="14008000" />
     </task>
     <task id="LOCAL-00001" summary="add to Git">
       <created>1677958977468</created>
@@ -162,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681292571054</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="main info">
+      <created>1681327575493</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1681327575493</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

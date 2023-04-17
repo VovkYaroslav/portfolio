@@ -97,7 +97,7 @@ buttonUp.className = "buttonUp"
 let switcher = document.createElement("div");
 switcher.className = "switcher";
 
-container.append(header, mainInf, footer, buttonUp, switcher);
+container.append(switcher, header, mainInf, footer, buttonUp);
 
 //content in header
 let title = document.createElement("h1");
@@ -165,9 +165,9 @@ par.innerText = "Hello! My name is Yaroslav, and I am currently a student at the
 
 infoAboutMe.className = "infoAboutMe"
 
-infoAboutMe.append(secondTitle, par)
+infoAboutMe.append(secondTitle, port, par)
 
-me.append(port, infoAboutMe)
+me.append( infoAboutMe)
 
 //content in proj
 
@@ -258,6 +258,38 @@ links.append(messengers)
 
 
 //content in switcher
+
+let switcherButton = document.createElement("button");
+switcherButton.className = "switcherButton";
+
+let switcherA = document.createElement("a")
+switcherA.innerText = "Click for change theme"
+switcherA.href = "#"
+switcherA.className = "switcherA"
+
+switcherA.addEventListener('click', () => {
+
+    if (localStorage.getItem('theme') === 'dark') {
+        localStorage.removeItem('theme');
+    } else {
+        localStorage.setItem('theme', 'dark')
+    }
+    addDerkClass()
+});
+
+let addDerkClass = () => {
+    try {
+if (localStorage.getItem('theme')==='dark'){
+    document.querySelector('body').classList.add('dark')
+}
+    } catch (err) {
+
+    }
+}
+addDerkClass()
+
+switcherButton.append(switcherA)
+switcher.append(switcherButton);
 
 
 //In this page I want also create some interesting design and try create moving parts
