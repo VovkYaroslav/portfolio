@@ -10,7 +10,7 @@ body {
     );
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    height: 100vh;
+    /*height: 100vh;*/
 }
 @keyframes gradient {
     0% {
@@ -67,7 +67,7 @@ a:hover{
     font-family: Georgia, fantasy;
 
     width: 100%;
-    /*height: 1000px;*/
+    height: 1000%;
 
     /*background: mediumpurple;*/
 }
@@ -103,7 +103,7 @@ a:hover{
     margin-top: -50px;
 
 }
-
+/*текст має ставати під фото і добавлятись кнопка про детальнішу інформацію*/
 
 .me {
     display: flex;
@@ -137,6 +137,8 @@ display: flex;
     display: flex;
     flex-wrap: wrap;
 }
+/*після адаптивки всі блоки мають ставати в колону
+також потрібно буде змінювати розмір кнопки відповідно до розміру екрану*/
 
 .divProj {
     width: 50%;
@@ -156,6 +158,7 @@ display: flex;
     align-items: center;
     justify-content: space-around;
 }
+/*після адаптивки списки маають ставати в колону і потрібно буде ще прибрати крапочки біля кодної строчки*/
 .dark{
     background: linear-gradient(
             -45deg, #1c6773, #682d73, #625d73, #184b36
@@ -167,8 +170,12 @@ display: flex;
     color:black ;
 }
 
+/*adapt version*/
 
+/*@media screen and (min-width: ) {*/
 
+/*}*/
+/*також застилізую скролл*/
 
 
 
