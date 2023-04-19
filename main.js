@@ -105,7 +105,7 @@ let footerA = document.createElement("a");
 footerA.href = '#footer';
 footerA.innerText = 'Footer'
 
-navigate.append(titleNavigate ,headerA, mainInfA, footerA)
+navigate.append(titleNavigate, headerA, mainInfA, footerA)
 
 let header = document.createElement('scroll-page');
 header.id = "header";
@@ -113,12 +113,12 @@ let mainInf = document.createElement('scroll-page');
 mainInf.id = "mainInf";
 let footer = document.createElement('scroll-page');
 footer.id = "footer";
-let buttonUp = document.createElement("button");
-buttonUp.className = "buttonUp"
-// let switcher = document.createElement("div");
+// let buttonUp = document.createElement("button");
+// buttonUp.className = "buttonUp"
+// // let switcher = document.createElement("div");
 // switcher.className = "switcher";
 
-container.append(navigate ,header, mainInf, footer, buttonUp);
+container.append(navigate, header, mainInf, footer);
 
 //content in header
 let title = document.createElement("h1");
@@ -184,11 +184,28 @@ par.innerText = "Hello! My name is Yaroslav, and I am currently a student at the
     " If given the chance, I am confident that I can demonstrate my abilities and contribute meaningfully to your company." +
     " Thank you for considering my application."
 
+par.className = 'parText'
+
+let butLearnMore = document.createElement("button");
+butLearnMore.className = 'buttonLearnMore';
+butLearnMore.innerText = 'more/less';
+
+butLearnMore.addEventListener('click', ()=>{
+
+    if (butLearnMore.innerText === 'more/less'){
+        butLearnMore.innerText = 'more/less';
+        par.classList.toggle('showMore');
+    }else {
+        butLearnMore.innerText = 'Read more'
+    }
+})
+
+
 infoAboutMe.className = "infoAboutMe"
 
 infoAboutMe.append(secondTitle, port, par)
 
-me.append( infoAboutMe)
+me.append(infoAboutMe, butLearnMore)
 
 //content in proj
 
