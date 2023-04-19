@@ -2,16 +2,71 @@ body {
     margin: 0;
     padding: 0;
 
+}
+
+
+button {
+
+    cursor: pointer;
+    width: 10%;
+
+    background-image: linear-gradient(-13deg, #e73c7e, #5B42F3 50%, #00DDEB);
+    border: 0;
+    border-radius: 5%;
+    box-shadow: rgba(145, 222, 567) 3px 3px 5px 3px;
+    box-sizing: border-box;
+
+
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+}
+
+button:active,
+button:hover {
+    background-image: linear-gradient(-40deg, #aa9aff, #ff05b6, #4bffa3);
+}
+
+a {
+    cursor: pointer;
+
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    color: #1fb120;
+}
+
+* {
+    cursor: default;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+
+    font-size: 17px;
+    font-style: italic;
+    font-family: Georgia, fantasy;
+
+    width: 100%;
+    height: max-content;
+
+    /*background: mediumpurple;*/
+
     color: #673333;
 
     /*background: lightgreen;*/
     background: linear-gradient(
             -45deg, #5ba796, #7a6aa7, #7076be, #23d5ab
     );
-    background-size: 400% 400%;
+    background-size: 100% 100%;
     animation: gradient 15s ease infinite;
     /*height: 100vh;*/
+
 }
+
 @keyframes gradient {
     0% {
         background-position: 0 50%;
@@ -24,61 +79,14 @@ body {
     }
 }
 
-button{
-
-    cursor: pointer;
-    width: 10%;
-
-    background-image: linear-gradient(-13deg, #e73c7e, #5B42F3 50%, #00DDEB);
-border: 0;
-    border-radius: 5%;
-    box-shadow: rgba(145, 222, 567) 3px 3px 5px 3px;
-    box-sizing: border-box;
-
-
-    -webkit-user-select: none;
-    touch-action: manipulation;
-
-}
-button:active,
-button:hover{
-    background-image: linear-gradient(-40deg, #aa9aff, #ff05b6, #4bffa3);
-}
-
-a{
-    cursor: pointer;
-
-    text-decoration: none;
-    color: #000000;
-}
-a:hover{
-    color: #1fb120;
-}
-
-*{
-    cursor: default;
-}
-.container {
-    display: flex;
-    flex-flow: column;
-
-    font-size: 17px;
-    font-style: italic;
-    font-family: Georgia, fantasy;
-
-    width: 100%;
-    height: 1000%;
-
-    /*background: mediumpurple;*/
-}
-
-.header {
+#header {
     width: 100%;
     height: 20%;
 
     /*background: greenyellow;*/
 
-
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
 
 }
@@ -103,6 +111,7 @@ a:hover{
     margin-top: -50px;
 
 }
+
 /*текст має ставати під фото і добавлятись кнопка про детальнішу інформацію*/
 
 .me {
@@ -123,10 +132,10 @@ a:hover{
     width: 79%;
 }
 
-.mainInf {
+#mainInf {
     width: 100%;
     height: 60%;
-display: flex;
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -137,6 +146,7 @@ display: flex;
     display: flex;
     flex-wrap: wrap;
 }
+
 /*після адаптивки всі блоки мають ставати в колону
 також потрібно буде змінювати розмір кнопки відповідно до розміру екрану*/
 
@@ -146,11 +156,10 @@ display: flex;
     text-align: center;
 }
 
-.footer {
+#footer {
 
     width: 100%;
     height: 20%;
-
 
 
     display: flex;
@@ -158,8 +167,9 @@ display: flex;
     align-items: center;
     justify-content: space-around;
 }
+
 /*після адаптивки списки маають ставати в колону і потрібно буде ще прибрати крапочки біля кодної строчки*/
-.dark{
+.dark {
     background: linear-gradient(
             -45deg, #1c6773, #682d73, #625d73, #184b36
     );
@@ -167,7 +177,33 @@ display: flex;
     animation: gradient 15s ease infinite;
     height: 100vh;
 
-    color:black ;
+    color: black;
+}
+
+nav {
+margin-top: -3%;
+    padding: 2%;
+
+    width: 10%;
+    height: 15%;
+
+
+    font-size: xx-large;
+}
+
+scroll-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.navigate {
+    display: flex;
+    flex-flow: column;
+    position: fixed;
+
+
 }
 
 /*adapt version*/

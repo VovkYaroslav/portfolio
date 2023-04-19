@@ -80,24 +80,45 @@ let liLinks = [
 // footer - contacts, links;
 
 //in this part I create container in which the project will be build
-let container = document.createElement("div");
+let container = document.createElement("scroll-container");
 container.className = "container";
 
 document.body.append(container);
 
 //content in container
-let header = document.createElement("div");
-header.className = "header";
-let mainInf = document.createElement("div");
-mainInf.className = "mainInf";
-let footer = document.createElement("div");
-footer.className = "footer";
+
+let navigate = document.createElement("nav");
+navigate.className = 'navigate';
+
+let titleNavigate = document.createElement("h3");
+titleNavigate.innerText = 'navigate'
+
+let headerA = document.createElement("a");
+headerA.href = '#header';
+headerA.innerText = 'Header'
+
+let mainInfA = document.createElement("a");
+mainInfA.href = '#mainInf';
+mainInfA.innerText = 'Info'
+
+let footerA = document.createElement("a");
+footerA.href = '#footer';
+footerA.innerText = 'Footer'
+
+navigate.append(titleNavigate ,headerA, mainInfA, footerA)
+
+let header = document.createElement('scroll-page');
+header.id = "header";
+let mainInf = document.createElement('scroll-page');
+mainInf.id = "mainInf";
+let footer = document.createElement('scroll-page');
+footer.id = "footer";
 let buttonUp = document.createElement("button");
 buttonUp.className = "buttonUp"
-let switcher = document.createElement("div");
-switcher.className = "switcher";
+// let switcher = document.createElement("div");
+// switcher.className = "switcher";
 
-container.append(switcher, header, mainInf, footer, buttonUp);
+container.append(navigate ,header, mainInf, footer, buttonUp);
 
 //content in header
 let title = document.createElement("h1");
@@ -256,40 +277,39 @@ for (const liLink of liLinks) {
 
 links.append(messengers)
 
-
-//content in switcher
-
-let switcherButton = document.createElement("button");
-switcherButton.className = "switcherButton";
-
-let switcherA = document.createElement("a")
-switcherA.innerText = "Click for change theme"
-switcherA.href = "#"
-switcherA.className = "switcherA"
-
-switcherA.addEventListener('click', () => {
-
-    if (localStorage.getItem('theme') === 'dark') {
-        localStorage.removeItem('theme');
-    } else {
-        localStorage.setItem('theme', 'dark')
-    }
-    addDerkClass()
-});
-
-let addDerkClass = () => {
-    try {
-if (localStorage.getItem('theme')==='dark'){
-    document.querySelector('body').classList.add('dark')
-}
-    } catch (err) {
-
-    }
-}
-addDerkClass()
-
-switcherButton.append(switcherA)
-switcher.append(switcherButton);
-
+//
+// //content in switcher
+//
+// let switcherButton = document.createElement("button");
+// switcherButton.className = "switcherButton";
+//
+// let switcherA = document.createElement("a")
+// switcherA.innerText = "Click for change theme"
+// switcherA.href = "#"
+// switcherA.className = "switcherA"
+//
+// switcherA.addEventListener('click', () => {
+//
+//     if (localStorage.getItem('theme') === 'dark') {
+//         localStorage.removeItem('theme');
+//     } else {
+//         localStorage.setItem('theme', 'dark')
+//     }
+//     addDerkClass()
+// });
+//
+// let addDerkClass = () => {
+//     try {
+// if (localStorage.getItem('theme')==='dark'){
+//     document.querySelector('body').classList.add('dark')
+// }
+//     } catch (err) {
+//
+//     }
+// }
+// addDerkClass()
+//
+// switcherButton.append(switcherA)
+// switcher.append(switcherButton);
 
 //In this page I want also create some interesting design and try create moving parts
